@@ -22,10 +22,11 @@ class Solution:
         		elif item == '*':
         			solu = number1 * number2
         		elif item == '/':
+        			#assume that number2 not equal zero, ugly code to deal with the inconformity
         			if number1 * number2 == 0:
         				solu = 0
         			elif number1 * number2 < 0 and number1 % number2 != 0:
-        				solu = number1 / number2 + 1 #assume that number2 not equal zero
+        				solu = number1 / number2 + 1 
         			else:
         				solu = number1 / number2
 
